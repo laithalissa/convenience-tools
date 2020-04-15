@@ -6,6 +6,5 @@ generate_filter() {
 
 filter=$(generate_filter)
 echo "$filter" | xclip -selection c
-echo "The following gmail filter is now on your clipboard:"
-echo ""
-echo "$filter"
+echo "$filter" > filter.txt
+echo "The gmail filter is now on your clipboard. See ./filter.txt for contents."
